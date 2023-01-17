@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Bank-Calculation</title>
+	<script src="https://cdn.tailwindcss.com">
+	</script>
+</head>
+<body>
+	<section class="flex justify-center items-center flex-col">
+		<h1 class="text-5xl text-center">Bank-<span class="font-semibold text-red-400">Calculation</span></h1>
+		<div class="grid grid-cols-3 gap-10 mt-16">
+			<div class="w-96 bg-lime-400 h-40 rounded flex justify-center items-center flex-col text-white">
+				<h1 class="text-4xl mb-5">Deposit</h1>
+				<h2 class="text-3xl">$<span id="deposit-blance">00</span></h2>
+			</div>
+			<div class="w-96 bg-green-400 h-40 rounded flex justify-center items-center flex-col text-white">
+				<h1 class=" text-4xl mb-5">Balance</h1>
+				<h2 class="text-3xl">$<span id="bank-blance">00</span></h2>
+			</div>
+			<div class="w-96 bg-fuchsia-400 h-40 rounded flex justify-center items-center flex-col text-white">
+				<h1 class=" text-4xl mb-5">Withdrow</h1>
+				<h2 class="text-3xl">$<span id="withdrow-blance">00</span></h2>
+			</div>
+		</div>
+	</section>
+	<section class="flex justify-center mt-20">
+		<div class="grid grid-cols-2 gap-40">
+			<div class="w-96 h-46 bg-rose-500 rounded flex justify-center items-center flex-col p4">
+				<h1 class="text-4xl mb-5 text-white">Please Deposit</h1><input class="mb-3 w-72 w-72 h-24 rounded pl-4" id="deposit-input" placeholder="please enter a deposit amount" type="number"> <button class="bg-yellow-500 h-16 w-40 rounded text-2xl text-white" id="deposit-button">Submit</button>
+			</div>
+			<div class="w-96 h-46 bg-pink-500 rounded flex justify-center items-center flex-col p-4">
+				<h1 class="text-4xl mb-5 text-white">Withdrow Now</h1><input class="mb-3 w-72 h-24 rounded pl-4" id="withdrow-input" placeholder="please enter a withdrow amount" type="number"> <button class="bg-yellow-500 h-16 w-40 rounded text-2xl text-white" id="withdrow-button">Submit</button>
+			</div>
+		</div>
+	</section>
+	<script src="bank.js">
+	</script>
+</body>
+</html>
